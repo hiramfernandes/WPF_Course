@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_WPF.Layout", "3_WPF.Layout\3_WPF.Layout.csproj", "{E6DAF992-AFE5-4DA4-923F-DDB8D2CC4CD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_Wpf.Controls", "..\..\ConsoleApp1\Wpf.Events\2_Wpf.Controls.csproj", "{C0F35835-E9E7-40D5-8F6C-EDAB6C960EA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_Wpf.Controls", "2_Wpf.Controls\2_Wpf.Controls.csproj", "{C0F35835-E9E7-40D5-8F6C-EDAB6C960EA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_Wpf.DataBinding", "4_Wpf.DataBinding\5_Wpf.DataBinding.csproj", "{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C0F35835-E9E7-40D5-8F6C-EDAB6C960EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F35835-E9E7-40D5-8F6C-EDAB6C960EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F35835-E9E7-40D5-8F6C-EDAB6C960EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
