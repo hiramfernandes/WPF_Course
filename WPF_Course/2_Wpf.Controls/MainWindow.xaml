@@ -1,0 +1,106 @@
+﻿<Window x:Class="Wpf.Events.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf.Events"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label>Event Manager</Label>
+        <StackPanel x:Name="Volume" VerticalAlignment="Center">
+
+            <Slider TickPlacement="Both"
+                    IsSnapToTickEnabled="True"
+                    SmallChange="20" LargeChange="50"
+                    ValueChanged="OnValueChanged"
+                    Width="220" Minimum="0" Maximum="100" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                <TextBlock Text="Slider Value:" />
+                <TextBlock x:Name="SliderValue" />
+            </StackPanel>
+
+            <Slider TickPlacement="TopLeft" 
+                    TickFrequency="5" 
+                    Orientation="Vertical" 
+                    SmallChange="10" LargeChange="20"
+                    ValueChanged="OnValueChanged2"
+                    Width="220" Height="120" Minimum="0" Maximum="100" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Slider Value:" />
+                <TextBlock x:Name="SliderValue2" />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel>
+            <ProgressBar Margin="12" x:Name="Progress" Height="30" Width="220" />
+            <Button x:Name="StartLongRunningTask"
+                    Click="StartLongRunningTask_Click"
+                    Width="140" Height="30" Content="StartLongRunningTask" />
+        </StackPanel>
+
+        <StackPanel>
+            <ComboBox x:Name="Dates" Width="120" Height="30" Margin="12" FontSize="16" DisplayMemberPath="DayOfWeek" >
+                <system:DateTime>3/15/2019</system:DateTime>
+                <system:DateTime>3/16/2019</system:DateTime>
+                <system:DateTime>3/17/2019</system:DateTime>
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel>
+            <ListBox Width="320" Height="250" Margin="12" FontSize="16"
+                     SelectionMode="Multiple" ScrollViewer.CanContentScroll="False">
+                <StackPanel Orientation="Horizontal" TextSearch.Text="Fowler">
+                    <Image Source="Images/FowlerMartin.jpg" Width="100" Height="100"
+                           RenderOptions.BitmapScalingMode="HighQuality" Margin="10" />
+                    <TextBlock Text="This is Martin Fowler" ></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" TextSearch.Text="Fowler">
+                    <Image Source="Images/Tiririca.jpg" Width="100" Height="100"
+                           RenderOptions.BitmapScalingMode="HighQuality" Margin="10" />
+                    <TextBlock Text="This is Tiririca" ></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" TextSearch.Text="Fowler">
+                    <Image Source="Images/Tiao.jpg" Width="100" Height="100"
+                           RenderOptions.BitmapScalingMode="HighQuality" Margin="10" />
+                    <TextBlock Text="This is Tião Macalé" ></TextBlock>
+                </StackPanel>
+            </ListBox>
+        </StackPanel>
+
+        <TabControl>
+            <TabItem Header="Tab 1" >
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                    <Ellipse Height="15" Width="15" Margin="6" Fill="Red" />
+                    <TextBlock Text="Content for Tab 1" Margin="6" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 2" >
+            <TreeView>
+                    <TreeViewItem Header="Chairs">
+                        <TreeViewItem Header="Computer Science" />
+                    </TreeViewItem>
+                    <TreeViewItem Header="Students">
+                        <TreeViewItem Header="Good Student" />
+                        <TreeViewItem Header="Bad Student" />
+                    </TreeViewItem>
+                </TreeView>
+            </TabItem>
+            <TabItem Header="Tab 3" >
+                <StackPanel>
+                    <TextBlock FontFamily="Verdana" FontSize="18" Margin="6" FontStyle="Italic" FontWeight="Bold" >
+                        <Run Text="Hello, " /><LineBreak />
+                        <Run Text=" World" />
+                    </TextBlock>
+
+                    <TextBox Width="120" Margin="5" Text="This is the Windows Presentation Foundation Course" TextWrapping="Wrap" />
+
+                    <TextBox Width="120" Margin="5" Text="This is the Windows Presentation Foundation Course" TextWrapping="WrapWithOverflow" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

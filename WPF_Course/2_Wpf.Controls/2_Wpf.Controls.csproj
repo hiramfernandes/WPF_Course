@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E75E1A0-0874-4FE1-9E90-6CD3B512097D}</ProjectGuid>
+    <ProjectGuid>{C0F35835-E9E7-40D5-8F6C-EDAB6C960EA1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WPF_Course</RootNamespace>
-    <AssemblyName>WPF_Course</AssemblyName>
+    <RootNamespace>Wpf.Events</RootNamespace>
+    <AssemblyName>Wpf.Events</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,6 +93,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FowlerMartin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tiririca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tiao.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
