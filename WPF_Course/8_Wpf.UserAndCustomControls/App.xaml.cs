@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace _5_Wpf.DataBinding
+namespace _8_Wpf.UserAndCustomControls
 {
     /// <summary>
     /// Interaction logic for App.xaml

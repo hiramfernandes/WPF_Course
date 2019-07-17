@@ -1,20 +1,10 @@
-﻿using _4_Wpf.DataBinding.Model;
-using System;
+﻿using _5_Wpf.DataBinding.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace _4_Wpf.DataBinding
+namespace _5_Wpf.DataBinding
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,6 +12,7 @@ namespace _4_Wpf.DataBinding
     public partial class MainWindow : Window
     {
         public Craftsman Craftsman { get; set; }
+        public ObservableCollection<Craftsman> Craftsmen { get; set; }
 
         public MainWindow()
         {
@@ -30,14 +21,27 @@ namespace _4_Wpf.DataBinding
                 Age = 10,
                 Name = "Woody",
                 LastName = "Woodpecker",
-                PicturePath = "Images\Woody2.jiff"
+                PicturePath = "Images/Woody.jfif"
+            };
+
+            Craftsmen = new ObservableCollection<Craftsman>()
+            {
+                new Craftsman() {Age = 10, LastName = "Woodpecker", Name = "Woody", PicturePath = "Images/Woody.jfif" },
+                new Craftsman() {Age = 12, LastName = "Woodpecker2", Name = "Woody2", PicturePath = "Images/Woody2.jiff" },
             };
 
             InitializeComponent();
-
-            Binding pictureBinding = new Binding();
         }
 
-        
+        private void AddCraftsman_OnClick(object sender, RoutedEventArgs e)
+        {
+            Craftsmen.Add(
+                new Craftsman()
+                {
+                    Age = 12,
+                    Name = "Some Name",
+                    LastName = "Some Last Name"
+                });
+        }
     }
 }

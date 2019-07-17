@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _5_Wpf.DataBinding.Properties
+namespace _8_Wpf.UserAndCustomControls.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace _5_Wpf.DataBinding.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_5_Wpf.DataBinding.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_8_Wpf.UserAndCustomControls.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

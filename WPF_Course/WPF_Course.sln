@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_Wpf.Controls", "2_Wpf.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_Wpf.DataBinding", "4_Wpf.DataBinding\5_Wpf.DataBinding.csproj", "{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_Wpf.Resources", "6_Wpf.Resources\6_Wpf.Resources.csproj", "{587DFA86-6624-46FD-BB0E-A5AD4B1661D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_Wpf.Styles", "7_Wpf.Styles\7_Wpf.Styles.csproj", "{ECEBD03E-FA03-46D0-ABB7-4D59638976B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8_Wpf.UserAndCustomControls", "8_Wpf.UserAndCustomControls\8_Wpf.UserAndCustomControls.csproj", "{E91E24DE-2F33-4E05-95E3-DC83D39852CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1FE8FEA-7E73-409F-ADEF-5378B1A1CC28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587DFA86-6624-46FD-BB0E-A5AD4B1661D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587DFA86-6624-46FD-BB0E-A5AD4B1661D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587DFA86-6624-46FD-BB0E-A5AD4B1661D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587DFA86-6624-46FD-BB0E-A5AD4B1661D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEBD03E-FA03-46D0-ABB7-4D59638976B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEBD03E-FA03-46D0-ABB7-4D59638976B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEBD03E-FA03-46D0-ABB7-4D59638976B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEBD03E-FA03-46D0-ABB7-4D59638976B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91E24DE-2F33-4E05-95E3-DC83D39852CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91E24DE-2F33-4E05-95E3-DC83D39852CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91E24DE-2F33-4E05-95E3-DC83D39852CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91E24DE-2F33-4E05-95E3-DC83D39852CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

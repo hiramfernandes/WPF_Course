@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _5_Wpf.DataBinding.Properties
+namespace _7_Wpf.Styles.Properties
 {
 
 
